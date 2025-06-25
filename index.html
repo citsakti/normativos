@@ -43,6 +43,13 @@
         article li {
             text-align: justify;
         }
+        /* Styles for the AI modal */
+        #ai-modal-backdrop {
+            transition: opacity 0.3s ease;
+        }
+        #ai-modal-content {
+            transition: transform 0.3s ease;
+        }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-700">
@@ -85,7 +92,10 @@
                     <section id="capitulo-1" class="content-section space-y-6">
                         <h2 class="text-xl font-bold text-sky-700 border-b border-sky-200 pb-2">CAPÍTULO I - DISPOSIÇÕES GERAIS</h2>
                         <article id="art-1" class="content-section bg-white p-6 rounded-lg shadow-sm border border-slate-200/80">
-                            <h3 class="font-bold text-slate-800 mb-3">Art. 1º - Objeto e âmbito de aplicação</h3>
+                            <div class="flex justify-between items-start mb-3">
+                                <h3 class="font-bold text-slate-800">Art. 1º - Objeto e âmbito de aplicação</h3>
+                                <button class="explain-article-btn text-xs bg-sky-100 text-sky-700 hover:bg-sky-200 font-semibold py-1 px-3 rounded-full transition-colors">✨ Explique este Artigo</button>
+                            </div>
                             <p class="mb-3">Esta Instrução Normativa dispõe sobre o procedimento administrativo para a realização de pesquisa de preços para aquisição de bens e contratação de serviços em geral, no âmbito da administração pública federal direta, autárquica e fundacional.</p>
                             <div class="space-y-2 text-slate-600 border-l-2 border-slate-200 pl-4">
                                 <p>§ 1º O disposto nesta Instrução Normativa não se aplica às contratações de obras e serviços de engenharia.</p>
@@ -94,19 +104,28 @@
                             </div>
                         </article>
                         <article id="art-2" class="content-section bg-white p-6 rounded-lg shadow-sm border border-slate-200/80">
-                            <h3 class="font-bold text-slate-800 mb-3">Art. 2º - Definições</h3>
+                            <div class="flex justify-between items-start mb-3">
+                                <h3 class="font-bold text-slate-800">Art. 2º - Definições</h3>
+                                <button class="explain-article-btn text-xs bg-sky-100 text-sky-700 hover:bg-sky-200 font-semibold py-1 px-3 rounded-full transition-colors">✨ Explique este Artigo</button>
+                            </div>
                             <p class="mb-3">Para fins do disposto nesta Instrução Normativa, considera-se:</p>
                             <ul class="space-y-3 list-inside">
                                 <li class="border-l-2 border-slate-200 pl-4"><span class="font-semibold">I - preço estimado:</span> valor obtido a partir de método matemático aplicado em série de preços coletados, devendo desconsiderar, na sua formação, os valores inexequíveis, os inconsistentes e os excessivamente elevados; e</li>
                                 <li class="border-l-2 border-slate-200 pl-4"><span class="font-semibold">II - sobrepreço:</span> preço orçado para licitação ou contratado em valor expressivamente superior aos preços referenciais de mercado, seja de apenas 1 (um) item, se a licitação ou a contratação for por preços unitários de serviço, seja do valor global do objeto, se a licitação ou a contratação for por tarefa, empreitada por preço global ou empreitada integral.</li>
                             </ul>
                         </article>
+                        <div class="text-center mt-4">
+                            <button class="summarize-chapter-btn text-sm bg-amber-100 text-amber-800 hover:bg-amber-200 font-semibold py-2 px-4 rounded-full transition-colors">✨ Resumir Capítulo</button>
+                        </div>
                     </section>
 
                     <section id="capitulo-2" class="content-section space-y-6">
                         <h2 class="text-xl font-bold text-sky-700 border-b border-sky-200 pb-2">CAPÍTULO II - ELABORAÇÃO DA PESQUISA DE PREÇO</h2>
                         <article id="art-3" class="content-section bg-white p-6 rounded-lg shadow-sm border border-slate-200/80">
-                            <h3 class="font-bold text-slate-800 mb-3">Art. 3º - Formalização</h3>
+                            <div class="flex justify-between items-start mb-3">
+                                <h3 class="font-bold text-slate-800">Art. 3º - Formalização</h3>
+                                <button class="explain-article-btn text-xs bg-sky-100 text-sky-700 hover:bg-sky-200 font-semibold py-1 px-3 rounded-full transition-colors">✨ Explique este Artigo</button>
+                            </div>
                             <p class="mb-3">A pesquisa de preços será materializada em documento que conterá, no mínimo:</p>
                              <ul class="space-y-3 list-inside">
                                 <li class="border-l-2 border-slate-200 pl-4"><span class="font-semibold">I -</span> descrição do objeto a ser contratado;</li>
@@ -120,14 +139,20 @@
                             </ul>
                         </article>
                         <article id="art-4" class="content-section bg-white p-6 rounded-lg shadow-sm border border-slate-200/80">
-                            <h3 class="font-bold text-slate-800 mb-3">Art. 4º - Critérios</h3>
+                            <div class="flex justify-between items-start mb-3">
+                                <h3 class="font-bold text-slate-800">Art. 4º - Critérios</h3>
+                                <button class="explain-article-btn text-xs bg-sky-100 text-sky-700 hover:bg-sky-200 font-semibold py-1 px-3 rounded-full transition-colors">✨ Explique este Artigo</button>
+                            </div>
                             <p class="mb-3">Na pesquisa de preços, sempre que possível, deverão ser observadas as condições comerciais praticadas, incluindo prazos e locais de entrega, instalação e montagem do bem ou execução do serviço, quantidade contratada, formas e prazos de pagamento, fretes, garantias exigidas e marcas e modelos, quando for o caso, observadas a potencial economia de escala e as peculiaridades do local de execução do objeto.</p>
                              <div class="space-y-2 text-slate-600 border-l-2 border-slate-200 pl-4">
                                 <p><strong>Parágrafo único.</strong> No caso de previsão de matriz de alocação de riscos entre o contratante e o contratado, o cálculo do valor estimado da contratação poderá considerar taxa de risco compatível com o objeto da licitação e os riscos atribuídos ao contratado, de acordo com a metodologia estabelecida no Caderno de Logística, elaborado pela Secretaria de Gestão da Secretaria Especial de Desburocratização, Gestão e Governo Digital do Ministério da Economia.</p>
                             </div>
                         </article>
                         <article id="art-5" class="content-section bg-white p-6 rounded-lg shadow-sm border border-slate-200/80">
-                            <h3 class="font-bold text-slate-800 mb-3">Art. 5º - Parâmetros</h3>
+                            <div class="flex justify-between items-start mb-3">
+                                <h3 class="font-bold text-slate-800">Art. 5º - Parâmetros</h3>
+                                <button class="explain-article-btn text-xs bg-sky-100 text-sky-700 hover:bg-sky-200 font-semibold py-1 px-3 rounded-full transition-colors">✨ Explique este Artigo</button>
+                            </div>
                             <p class="mb-3">A pesquisa de preços para fins de determinação do preço estimado em processo licitatório para a aquisição de bens e contratação de serviços em geral será realizada mediante a utilização dos seguintes parâmetros, empregados de forma combinada ou não:</p>
                              <ul class="space-y-4 list-inside">
                                 <li class="border-l-2 border-slate-200 pl-4"><span class="font-semibold">I -</span> composição de custos unitários menores ou iguais à mediana do item correspondente nos sistemas oficiais de governo, como Painel de Preços ou banco de preços em saúde, observado o índice de atualização de preços correspondente;</li>
@@ -160,7 +185,10 @@
                             </div>
                         </article>
                          <article id="art-6" class="content-section bg-white p-6 rounded-lg shadow-sm border border-slate-200/80">
-                            <h3 class="font-bold text-slate-800 mb-3">Art. 6º - Metodologia para obtenção do preço estimado</h3>
+                            <div class="flex justify-between items-start mb-3">
+                                <h3 class="font-bold text-slate-800">Art. 6º - Metodologia para obtenção do preço estimado</h3>
+                                <button class="explain-article-btn text-xs bg-sky-100 text-sky-700 hover:bg-sky-200 font-semibold py-1 px-3 rounded-full transition-colors">✨ Explique este Artigo</button>
+                            </div>
                             <p class="mb-3">Serão utilizados, como métodos para obtenção do preço estimado, a média, a mediana ou o menor dos valores obtidos na pesquisa de preços, desde que o cálculo incida sobre um conjunto de três ou mais preços, oriundos de um ou mais dos parâmetros de que trata o art. 5º, desconsiderados os valores inexequíveis, inconsistentes e os excessivamente elevados.</p>
                             <div class="space-y-2 text-slate-600 border-l-2 border-sky-200 pl-4 mt-4">
                                 <p>§ 1º Poderão ser utilizados outros critérios ou métodos, desde que devidamente justificados nos autos pelo gestor responsável e aprovados pela autoridade competente.</p>
@@ -171,12 +199,18 @@
                                 <p>§ 6º Quando o preço estimado for obtido com base única no inciso I do art. 5º, o valor não poderá ser superior à mediana do item nos sistemas consultados.</p>
                             </div>
                         </article>
+                        <div class="text-center mt-4">
+                            <button class="summarize-chapter-btn text-sm bg-amber-100 text-amber-800 hover:bg-amber-200 font-semibold py-2 px-4 rounded-full transition-colors">✨ Resumir Capítulo</button>
+                        </div>
                     </section>
                     
                     <section id="capitulo-3" class="content-section space-y-6">
                         <h2 class="text-xl font-bold text-sky-700 border-b border-sky-200 pb-2">CAPÍTULO III - REGRAS ESPECÍFICAS</h2>
                         <article id="art-7" class="content-section bg-white p-6 rounded-lg shadow-sm border border-slate-200/80">
-                            <h3 class="font-bold text-slate-800 mb-3">Art. 7º - Contratação direta</h3>
+                            <div class="flex justify-between items-start mb-3">
+                                <h3 class="font-bold text-slate-800">Art. 7º - Contratação direta</h3>
+                                <button class="explain-article-btn text-xs bg-sky-100 text-sky-700 hover:bg-sky-200 font-semibold py-1 px-3 rounded-full transition-colors">✨ Explique este Artigo</button>
+                            </div>
                              <p class="mb-3">Nas contratações diretas por inexigibilidade ou por dispensa de licitação, aplica-se o disposto no art. 5º.</p>
                              <div class="space-y-2 text-slate-600 border-l-2 border-sky-200 pl-4 mt-4">
                                 <p>§ 1º Quando não for possível estimar o valor do objeto na forma estabelecida no art. 5º, a justificativa de preços será dada com base em valores de contratações de objetos idênticos, comercializados pela futura contratada, por meio da apresentação de notas fiscais emitidas para outros contratantes, públicos ou privados, no período de até 1 (um) ano anterior à data da contratação pela Administração, ou por outro meio idôneo.</p>
@@ -187,35 +221,69 @@
                             </div>
                         </article>
                          <article id="art-8" class="content-section bg-white p-6 rounded-lg shadow-sm border border-slate-200/80">
-                            <h3 class="font-bold text-slate-800 mb-3">Art. 8º - Contratação de itens de TIC</h3>
+                            <div class="flex justify-between items-start mb-3">
+                                <h3 class="font-bold text-slate-800">Art. 8º - Contratação de itens de TIC</h3>
+                                <button class="explain-article-btn text-xs bg-sky-100 text-sky-700 hover:bg-sky-200 font-semibold py-1 px-3 rounded-full transition-colors">✨ Explique este Artigo</button>
+                            </div>
                             <p class="mb-3">Os preços de itens constantes nos Catálogos de Soluções de TIC com Condições Padronizadas, publicados pela Secretaria de Governo Digital da Secretaria Especial de Desburocratização, Gestão e Governo Digital do Ministério da Economia, deverão ser utilizados como preço estimado, salvo se a pesquisa de preços realizada resultar em valor inferior.</p>
                              <div class="space-y-2 text-slate-600 border-l-2 border-slate-200 pl-4">
                                 <p><strong>Parágrafo único.</strong> As estimativas de preços constantes em modelos de contratação de soluções de TIC, publicados pela Secretaria de Governo Digital, poderão ser utilizadas como preço estimado.</p>
                             </div>
                         </article>
                          <article id="art-9" class="content-section bg-white p-6 rounded-lg shadow-sm border border-slate-200/80">
-                            <h3 class="font-bold text-slate-800 mb-3">Art. 9º - Contratação de serviços com dedicação de mão de obra exclusiva</h3>
+                            <div class="flex justify-between items-start mb-3">
+                                <h3 class="font-bold text-slate-800">Art. 9º - Contratação de serviços com dedicação de mão de obra exclusiva</h3>
+                                <button class="explain-article-btn text-xs bg-sky-100 text-sky-700 hover:bg-sky-200 font-semibold py-1 px-3 rounded-full transition-colors">✨ Explique este Artigo</button>
+                            </div>
                             <p>Na pesquisa de preço para obtenção do preço estimado relativo às contratações de prestação de serviços com regime de dedicação de mão de obra exclusiva, aplica-se o disposto na Instrução Normativa nº 5, de 26 de maio de 2017, ou outra que venha a substituí-la, observando, no que couber, o disposto nesta Instrução Normativa.</p>
                         </article>
+                        <div class="text-center mt-4">
+                            <button class="summarize-chapter-btn text-sm bg-amber-100 text-amber-800 hover:bg-amber-200 font-semibold py-2 px-4 rounded-full transition-colors">✨ Resumir Capítulo</button>
+                        </div>
                     </section>
 
                      <section id="capitulo-4" class="content-section space-y-6">
                         <h2 class="text-xl font-bold text-sky-700 border-b border-sky-200 pb-2">CAPÍTULO IV - DISPOSIÇÕES FINAIS</h2>
                         <article id="art-10" class="content-section bg-white p-6 rounded-lg shadow-sm border border-slate-200/80">
-                            <h3 class="font-bold text-slate-800 mb-3">Art. 10º - Orientações gerais</h3>
+                            <div class="flex justify-between items-start mb-3">
+                                <h3 class="font-bold text-slate-800">Art. 10º - Orientações gerais</h3>
+                                <button class="explain-article-btn text-xs bg-sky-100 text-sky-700 hover:bg-sky-200 font-semibold py-1 px-3 rounded-full transition-colors">✨ Explique este Artigo</button>
+                            </div>
                             <p>Desde que justificado, o orçamento estimado da contratação poderá ter caráter sigiloso, sem prejuízo da divulgação do detalhamento dos quantitativos e das demais informações necessárias para a elaboração das propostas, salvo na hipótese de licitação cujo critério de julgamento for por maior desconto.</p>
                         </article>
                          <article id="art-11" class="content-section bg-white p-6 rounded-lg shadow-sm border border-slate-200/80">
-                            <h3 class="font-bold text-slate-800 mb-3">Art. 11º - Vigência</h3>
+                            <div class="flex justify-between items-start mb-3">
+                                <h3 class="font-bold text-slate-800">Art. 11º - Vigência</h3>
+                                <button class="explain-article-btn text-xs bg-sky-100 text-sky-700 hover:bg-sky-200 font-semibold py-1 px-3 rounded-full transition-colors">✨ Explique este Artigo</button>
+                            </div>
                             <p class="mb-3">Esta Instrução Normativa entra em vigor na data de sua publicação.</p>
                             <div class="space-y-2 text-slate-600 border-l-2 border-slate-200 pl-4">
                                 <p><strong>Parágrafo único.</strong> Permanecem regidos pela Instrução Normativa nº 73, de 5 de agosto de 2020, todos os procedimentos administrativos autuados ou registrados sob a égide da Lei nº 8.666, de 21 de junho de 1993, da Lei nº 10.520, de 17 de junho de 2001, e da Lei nº 12.462, de 4 de agosto de 2011, incluindo contratações e eventuais renovações ou prorrogações de vigências respectivas.</p>
                             </div>
                         </article>
+                        <div class="text-center mt-4">
+                            <button class="summarize-chapter-btn text-sm bg-amber-100 text-amber-800 hover:bg-amber-200 font-semibold py-2 px-4 rounded-full transition-colors">✨ Resumir Capítulo</button>
+                        </div>
                     </section>
                 </div>
             </div>
         </main>
+    </div>
+
+    <!-- AI Modal -->
+    <div id="ai-modal" class="fixed inset-0 z-50 flex items-center justify-center hidden" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+        <div id="ai-modal-backdrop" class="fixed inset-0 bg-gray-500 bg-opacity-75" aria-hidden="true"></div>
+        <div id="ai-modal-content" class="relative bg-white rounded-lg shadow-xl w-11/12 md:w-2/3 lg:w-1/2 max-h-[80vh] flex flex-col transform scale-95 opacity-0">
+            <div class="flex items-center justify-between p-4 border-b rounded-t">
+                <h3 id="ai-modal-title" class="text-xl font-semibold text-gray-900">✨ Assistente IA</h3>
+                <button id="ai-modal-close-btn" type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                </button>
+            </div>
+            <div id="ai-modal-body" class="p-6 space-y-4 overflow-y-auto">
+                <!-- AI content will be inserted here -->
+            </div>
+        </div>
     </div>
 
     <!-- Modal Structure -->
@@ -228,6 +296,7 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', function () {
+            // --- Navigation Logic (existing) ---
             const navPanel = document.getElementById('navigation-panel');
             const contentSections = document.querySelectorAll('.content-section');
             const navLinks = [];
@@ -300,7 +369,7 @@
                 observer.observe(section);
             });
 
-            // 4. Modal Logic
+            // 4. Modal Logic (existing)
             const openModalButton = document.getElementById('open-modal-button');
             const closeModalButton = document.getElementById('close-modal-button');
             const modalOverlay = document.getElementById('modal-overlay');
@@ -318,6 +387,97 @@
 
             closeModalButton.addEventListener('click', closeModal);
             modalOverlay.addEventListener('click', closeModal);
+
+            // --- AI Functionality (new) ---
+            const aiModal = document.getElementById('ai-modal');
+            const aiModalBackdrop = document.getElementById('ai-modal-backdrop');
+            const aiModalContent = document.getElementById('ai-modal-content');
+            const aiModalBody = document.getElementById('ai-modal-body');
+            const aiModalTitle = document.getElementById('ai-modal-title');
+            const aiCloseModalBtn = document.getElementById('ai-modal-close-btn');
+
+            function showAIModal() {
+                aiModal.classList.remove('hidden');
+                setTimeout(() => {
+                    aiModalBackdrop.classList.remove('opacity-0');
+                    aiModalContent.classList.remove('opacity-0', 'scale-95');
+                }, 10);
+            }
+
+            function hideAIModal() {
+                aiModalBackdrop.classList.add('opacity-0');
+                aiModalContent.classList.add('opacity-0', 'scale-95');
+                setTimeout(() => {
+                    aiModal.classList.add('hidden');
+                }, 300);
+            }
+
+            aiCloseModalBtn.addEventListener('click', hideAIModal);
+            aiModalBackdrop.addEventListener('click', hideAIModal);
+
+            async function callGemini(prompt) {
+                aiModalBody.innerHTML = '<div class="flex items-center justify-center p-8"><div class="animate-spin rounded-full h-12 w-12 border-b-2 border-sky-600"></div><p class="ml-4 text-slate-600">Processando com a IA...</p></div>';
+                showAIModal();
+
+                let chatHistory = [{ role: "user", parts: [{ text: prompt }] }];
+                const payload = { contents: chatHistory };
+                const apiKey = "AIzaSyAav51WPs2n8k22ccQ9n7yEtujWTH_il38";
+                const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
+
+                try {
+                    const response = await fetch(apiUrl, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify(payload)
+                    });
+
+                    if (!response.ok) {
+                        throw new Error(`API Error: ${response.statusText}`);
+                    }
+                    
+                    const result = await response.json();
+                    
+                    if (result.candidates && result.candidates.length > 0 &&
+                        result.candidates[0].content && result.candidates[0].content.parts &&
+                        result.candidates[0].content.parts.length > 0) {
+                        const text = result.candidates[0].content.parts[0].text;
+                        // Basic markdown to HTML conversion
+                        const formattedText = text
+                            .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+                            .replace(/\n/g, '<br>');
+                        aiModalBody.innerHTML = `<p class="text-slate-600 leading-relaxed">${formattedText}</p>`;
+                    } else {
+                        throw new Error("Resposta da IA inválida ou vazia.");
+                    }
+                } catch (error) {
+                    console.error("Gemini API call failed:", error);
+                    aiModalBody.innerHTML = `<div class="bg-red-100 border-l-4 border-red-500 text-red-700 p-4" role="alert"><p class="font-bold">Erro</p><p>Não foi possível obter a resposta da IA. Por favor, tente novamente mais tarde. Verifique se você inseriu uma API Key válida do Google Gemini.</p></div>`;
+                }
+            }
+
+            // Add event listeners for "Explain Article" buttons
+            document.querySelectorAll('.explain-article-btn').forEach(button => {
+                button.addEventListener('click', () => {
+                    const article = button.closest('article');
+                    const articleTitle = article.querySelector('h3').textContent;
+                    const articleText = article.innerText; // Get all text within the article
+                    aiModalTitle.textContent = `✨ Explicando: ${articleTitle}`;
+                    const prompt = `Você é um assistente jurídico. Explique o seguinte artigo de uma instrução normativa brasileira em linguagem simples e clara, como se estivesse falando para uma pessoa leiga que não entende de jargão jurídico. O foco é na clareza e facilidade de compreensão.\n\nArtigo:\n"${articleText}"`;
+                    callGemini(prompt);
+                });
+            });
+
+            // Add event listeners for "Summarize Chapter" buttons
+            document.querySelectorAll('.summarize-chapter-btn').forEach(button => {
+                button.addEventListener('click', () => {
+                    const chapter = button.closest('section');
+                    const chapterTitle = chapter.querySelector('h2').textContent;
+                    const chapterText = chapter.innerText; // Get all text within the chapter
+                    aiModalTitle.textContent = `✨ Resumo do ${chapterTitle}`;
+                    const prompt = `Você é um assistente jurídico. Resuma os pontos-chave e as principais regras do seguinte capítulo de uma instrução normativa brasileira. O resumo deve ser conciso e focado nos aspectos mais importantes para um gestor público entender rapidamente o conteúdo.\n\nCapítulo:\n"${chapterText}"`;
+                    callGemini(prompt);
+                });
+            });
         });
     </script>
 </body>
